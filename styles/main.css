@@ -3,6 +3,18 @@
     src: url(../fonts/norse.bold.otf);
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: lighter;
+}
+
 :root {
     --orange: #ce973e;
 }
@@ -12,7 +24,7 @@ html * {
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 13px;
     color: #333;
 }
@@ -55,4 +67,58 @@ nav ul li {
 nav ul li:not(#spacer):hover {
     color: black;
     cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+header h1 {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    font-size: 2.8em;
+    font-weight: lighter;
+    line-height: 1.2;
+    color: #ce973e;
+}
+
+header p {
+    margin-bottom: 60px;
+}
+
+header .btn {
+    margin-bottom: 50px;
+    background-color: #6abfc3;
+    border-color: #6abfc3;
+}
+
+header .btn:hover {
+    background-color: #8ecfd2;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 1.2em 3em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 0 0.5em #aaa;
+    border-radius: 5px;
+}
+
+/* TEXT */
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: rgba(74, 74, 74, 0.7);
 }
