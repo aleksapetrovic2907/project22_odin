@@ -11,10 +11,17 @@
 
 @font-face {
     font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Open Sans";
     src: url(../fonts/OpenSans-Light.ttf);
     font-weight: lighter;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 :root {
     --orange: #ce973e;
 }
@@ -57,6 +64,7 @@ nav .left {
 
 nav ul li {
     display: inline;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     color: rgba(74, 74, 74, 0.7);
@@ -72,8 +80,14 @@ nav ul li:not(#spacer):hover {
 /* HEADER */
 
 header {
+    margin-top: 50px;
     text-align: center;
     font-family: "Open Sans", sans-serif;
+}
+
+
+header * {
+    display: block;
 }
 
 header h1 {
@@ -86,13 +100,29 @@ header h1 {
 }
 
 header p {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+header #update {
+    color: var(--orange);
+    text-decoration: underline;
+    margin-bottom: 70px;
+    font-size: 1.3em;
+}
+
+header #update:hover {
+    color: black;
+    text-decoration: none;
 }
 
 header .btn {
     margin-bottom: 50px;
     background-color: #6abfc3;
     border-color: #6abfc3;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: .2px;
 }
 
 header .btn:hover {
@@ -103,7 +133,7 @@ header .btn:hover {
 
 .btn {
     display: inline-block;
-    padding: 1.2em 3em;
+    padding: 1.35rem 3.5rem;
     color: #fff;
     font-weight: bold;
     font-size: 1.2em;
