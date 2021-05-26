@@ -89,7 +89,6 @@ header {
     font-family: "Open Sans", sans-serif;
 }
 
-
 header * {
     display: block;
 }
@@ -133,6 +132,41 @@ header .btn:hover {
     background-color: #8ecfd2;
 }
 
+/* HOW-IT-WORKS */
+
+.how-it-works {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.how-it-works>div:first-of-type {
+    max-width: 600px;
+    margin-bottom: 100px;
+}
+
+
+
+#how-it-works-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.how-it-works .title {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 50px 0 20px;
+}
+
+.how-it-works .item {
+    margin-bottom: 25px;
+}
+
+.how-it-works img {
+    height: 165px;
+    vertical-align: middle;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -158,21 +192,20 @@ p {
 }
 
 /* MEDIA QUERIES */
+
 @media (max-width: 1140px) {
     nav {
         padding: 6px 30px;
     }
-
     #odin-logo-text {
         font-size: 25px;
-    }    
+    }
 }
 
 @media (max-width: 768px) {
     nav ul li {
         display: none;
     }
-
     nav ul li:last-child {
         display: inline;
     }
