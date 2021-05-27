@@ -34,6 +34,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     color: #333;
+    text-align: center;
 }
 
 /* NAVBAR */
@@ -144,8 +145,6 @@ header .btn:hover {
     margin-bottom: 100px;
 }
 
-
-
 #how-it-works-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -167,6 +166,102 @@ header .btn:hover {
     vertical-align: middle;
 }
 
+/* CURRICULUM DETAILS */
+
+.curriculum-details {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 3em 0;
+}
+
+.curriculum-details .row {
+    justify-items: center;
+}
+
+.title {
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 50px 0px;
+}
+
+.curriculum-details .topic {
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    width: 100%;
+    background-color: white;
+    padding: 2em 0em 2em 0em;
+}
+
+.curriculum-details img {
+    height: 160px;
+}
+
+.curriculum-details h2 {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    letter-spacing: .2px;
+    color: black;
+}
+
+/* SUCCESS STORIES */
+
+.success-stories {
+    width: 100%;
+}
+
+.gradient {
+    background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
+.story {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.story h1 {
+    color: var(--orange);
+    font-size: 1.125rem;
+}
+
+.story img {
+    margin-right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.success-stories .btn {
+    margin-bottom: 50px;
+    background-color: #6abfc3;
+    border-color: #6abfc3;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: .2px;
+}
+
+#read-more {
+    margin: 50px 0;
+    font-size: 1rem;
+    color: rgb(74 74 74 / 70%);
+    text-decoration: underline;
+}
+
+#read-more:hover {
+    color: black;
+}
+
+#start-learning {
+    color: rgba(74,74,74,0.7);
+    font-size: 2.2em;
+    line-height: 1.5em;
+    margin: 0 auto 1rem;
+    max-width: 25em;
+    padding: 80px 0 30px 0px;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -177,6 +272,17 @@ header .btn:hover {
     font-size: 1.2em;
     box-shadow: 0 0 0.5em #aaa;
     border-radius: 5px;
+}
+
+.btn-secondary {
+    margin: 60px 0 0 0;
+    background-color: var(--orange);
+}
+
+.btn-secondary:hover {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* TEXT */
@@ -192,6 +298,14 @@ p {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 480px) {
+    .story img {
+        display: none;
+    }
+    .story {
+        display: static;
+    }
+}
 
 @media (max-width: 1140px) {
     nav {
