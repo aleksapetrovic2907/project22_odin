@@ -296,16 +296,16 @@ footer .logo {
     align-items: center;
 }
 
-.left, .right {
+footer .left, footer .right {
     display: flex;
     flex-direction: column;
 }
 
-.left {
+footer .left {
     margin-right: 30px;
 }
 
-.left *, .right * {
+footer .left *, footer .right * {
     flex-basis: 30px;
     font-size: 1.2em;
     color: rgba(74,74,74,0.7);
