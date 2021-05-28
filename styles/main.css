@@ -262,6 +262,58 @@ header .btn:hover {
     padding: 80px 0 30px 0px;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 5em;
+}
+
+footer .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.brand {
+    height: 24px;
+    width: 24px;
+    margin: 0 24px;
+}
+
+.other-links {
+    display: flex;
+    align-items: center;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    margin-right: 30px;
+}
+
+.left *, .right * {
+    flex-basis: 30px;
+    font-size: 1.2em;
+    color: rgba(74,74,74,0.7);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -322,5 +374,9 @@ p {
     }
     nav ul li:last-child {
         display: inline;
+    }
+
+    footer .logo {
+        display: none;
     }
 }
